@@ -3,6 +3,7 @@
 import { useRef, useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { Download, Heart } from "lucide-react";
+// @ts-ignore
 import * as domtoimage from "dom-to-image-more";
 import jsPDF from "jspdf";
 
@@ -179,4 +180,5 @@ export function CertificateGenerator({ certificate, onClose }: CertificateGenera
         </div>
       </div>
     </section>
-  
+  );
+}
